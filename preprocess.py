@@ -6,7 +6,7 @@ from split2piece import split_into_words
 
 SEP = os.sep
 
-data_all_in = '../data/pythonTutorial5/'
+data_all_in = '../data/python_tutorial_RSCR/'
 
 
 def if_no_create_it(file_path):
@@ -88,4 +88,4 @@ def get_split_test_train(data_dir, dataset='mono16000vad', split_rate=0.8):
     return 0
 
 
-get_split_test_train('../data/pythonTutorial5/mono32000vad', 'mono32000vad', split_rate=0.8)
+get_split_test_train('../data/python_tutorial_RSCR/mono32000vad', 'mono32000vad', split_rate=0.8)

@@ -8,7 +8,7 @@ from calcMFCC import calcMFCC
 
 
 def saveChromaDataset(X, Y):
-    file = h5py.File('../data/pythonTutorial5/chromaData.h5', 'w')
+    file = h5py.File('../data/python_tutorial_RSCR/chromaData.h5', 'w')
     file.create_dataset("X", data=X)
     file.create_dataset("Y", data=Y)
     file.close()
@@ -16,14 +16,14 @@ def saveChromaDataset(X, Y):
 
 
 def saveMFCCDataset(X, Y):
-    file = h5py.File('../data/pythonTutorial5/mfccData.h5', 'w')
+    file = h5py.File('../data/python_tutorial_RSCR/mfccData.h5', 'w')
     file.create_dataset("X", data=X)
     file.create_dataset("Y", data=Y)
     file.close()
     return 0
 
 
-def load_wav_data_to_extract_features(data_dir='../data/pythonTutorial5/mono32000vad',inlude=''):
+def load_wav_data_to_extract_features(data_dir='../data/python_tutorial_RSCR/mono32000vad',inlude=''):
     chroma_dataset_X = []
     chroma_dataset_Y = []
     mfcc_dataset_X = []
