@@ -14,7 +14,7 @@ def read_wave(path):
         sample_width = wf.getsampwidth()
         assert sample_width == 2
         sample_rate = wf.getframerate()
-        assert sample_rate in (8000, 16000, 32000)
+        assert sample_rate in (8000, 16000, 32000, 44100)
         pcm_data = wf.readframes(wf.getnframes())
         return pcm_data, sample_rate
 
@@ -82,7 +82,7 @@ def vad_collector(sample_rate, frame_duration_ms,
 
 
 def get_vad(path, data='mono16000'):
-    aggressiveness = 3  # 0-3
+    aggressiveness = 2  # 0-3
     for parent, dirnames, filenames in os.walk(path):
         for filename in filenames:
             if '.DS_Store' not in filename and '.doc' not in filename:
@@ -109,6 +109,6 @@ def get_vad(path, data='mono16000'):
 
 
 if __name__ == '__main__':
-    get_vad('out_vad')
+    get_vad('../data/python_tutorial_RSCR/mono44100', 'mono44100')
 
     # [data,rate]=read_wave('IUOUI_8k_mono/reading5-m-ck.wav')

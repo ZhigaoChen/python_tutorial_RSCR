@@ -1,8 +1,11 @@
+import math
 import os
+
 import h5py
 import numpy
 from scipy.io.wavfile import read
 from tqdm import tqdm
+
 from calcChroma import calcChroma
 from calcMFCC import calcMFCC
 
@@ -23,7 +26,7 @@ def saveMFCCDataset(X, Y):
     return 0
 
 
-def load_wav_data_to_extract_features(data_dir='../data/python_tutorial_RSCR/mono32000vad',inlude=''):
+def load_wav_data_to_extract_features(data_dir='../data/python_tutorial_RSCR/mono32000vad', inlude=''):
     chroma_dataset_X = []
     chroma_dataset_Y = []
     mfcc_dataset_X = []
@@ -38,8 +41,14 @@ def load_wav_data_to_extract_features(data_dir='../data/python_tutorial_RSCR/mon
                 chroma_feature = calcChroma(audio_path)
                 chroma_feature = numpy.array(chroma_feature)
                 for chroma_feature_frame in chroma_feature:
-                    chroma_dataset_X.append(chroma_feature_frame)
-                    chroma_dataset_Y.append(audio_owner)
+                    drop_flag = False
+                    for number in chroma_feature_frame:
+                        if math.isinf(number) or math.isnan(number):
+                            drop_flag = True
+                            break
+                    if not drop_flag:
+                        chroma_dataset_X.append(chroma_feature_frame)
+                        chroma_dataset_Y.append(audio_owner)
                 # mfcc
                 fs, signal = read(audio_path)
                 mfcc_feature = calcMFCC(signal, fs)
@@ -52,7 +61,9 @@ def load_wav_data_to_extract_features(data_dir='../data/python_tutorial_RSCR/mon
 
 
 def main():
-    load_wav_data_to_extract_features()
+    dataset = 'mono16000vad'
+    data_dir = '../data/python_tutorial_RSCR/' + dataset
+    load_wav_data_to_extract_features(data_dir, inlude='singing')
     return 0
 
 

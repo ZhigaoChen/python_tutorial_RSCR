@@ -88,4 +88,5 @@ def get_split_test_train(data_dir, dataset='mono16000vad', split_rate=0.8):
     return 0
 
 
-get_split_test_train('../data/python_tutorial_RSCR/mono32000vad', 'mono32000vad', split_rate=0.8)
+# get_split_test_train('../data/python_tutorial_RSCR/mono32000vad', 'mono32000vad', split_rate=0.8)
+# format_all_to_wav()
