@@ -9,8 +9,11 @@ from sklearn.tree import DecisionTreeClassifier
 
 from calcMFCC import calcMFCC
 
+DATASETPATH = '../data/python_tutorial_RSCR/feature_mono32000/mix56mfccData.h5'
+MODELPATH = 'model/dt.model'
 
-def load_saved_dataset(path_to_dataset='../data/python_tutorial_RSCR/feature_mono32000/mix56mfccData.h5'):
+
+def load_saved_dataset(path_to_dataset=DATASETPATH):
     h5file = h5py.File(path_to_dataset, 'r')
     X = h5file['X'][:]
     Y = h5file['Y'][:]
@@ -59,7 +62,7 @@ def basic_model(x_train, x_test, y_train, y_test):
     return acc, clf
 
 
-def predict_user_choose_audio_file(wav_path, model_path='dt.model'):
+def predict_user_choose_audio_file(wav_path, model_path=MODELPATH):
     mfcc_data_list = []
     model = joblib.load(model_path)
     fs, signal = read(wav_path)
@@ -81,7 +84,7 @@ def main():
     # x_train, x_test, y_train, y_test = split_dataset_to_tain_test(X, Y, test_size=0.2)
     # # grid_search(x_train, y_train)
     # acc, model = basic_model(x_train, x_test, y_train, y_test)
-    # joblib.dump(model,'dt.model')
+    # joblib.dump(model,MODELPATH)
     # print "save model..."
     print predict_user_choose_audio_file('reading5-m-yxx.wav')
 

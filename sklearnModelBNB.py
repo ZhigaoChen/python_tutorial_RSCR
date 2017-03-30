@@ -12,7 +12,7 @@ from sklearn.pipeline import Pipeline
 from calcMFCC import calcMFCC
 
 DATASETPATH = '../data/python_tutorial_RSCR/feature_mono32000/mix56mfccData.h5'
-MODELPATH = 'bnb.model'
+MODELPATH = 'model/bnb.model'
 
 
 def load_saved_dataset(path_to_dataset=DATASETPATH):

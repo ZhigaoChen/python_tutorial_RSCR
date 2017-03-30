@@ -7,13 +7,11 @@ from scipy.io.wavfile import read
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
-from sklearn.svm import SVC
-
-
+from sklearn.neighbors.nearest_centroid import NearestCentroid
 from calcMFCC import calcMFCC
 
 DATASETPATH = '../data/python_tutorial_RSCR/feature_mono32000/mix56mfccData.h5'
-MODELPATH = 'model/svm.model'
+MODELPATH = 'model/nc.model'
 
 
 def load_saved_dataset(path_to_dataset=DATASETPATH):
@@ -32,7 +30,7 @@ def split_dataset_to_tain_test(X, Y, test_size=0.2):
 def grid_search(x_train, y_train):
     print 'grid search...'
     # 用信息增益启发式算法建立决策树
-    pipeline = Pipeline([('clf', SVC())])  # not
+    pipeline = Pipeline([('clf', NearestCentroid())])  # not
     print pipeline.get_params().keys()
     parameters = {
         'clf__max_depth': [10, 30, 50, 80, 100],
@@ -51,7 +49,8 @@ def grid_search(x_train, y_train):
 
 def basic_model(x_train, x_test, y_train, y_test):
     if not os.path.isfile(MODELPATH):
-        clf = SVC(decision_function_shape='ovo')
+        clf = NearestCentroid(shrink_threshold=0)
+        print clf
 
     else:
         clf = joblib.load(MODELPATH)
@@ -101,4 +100,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-    # mfcc mix56 acc is: 0.243055. @32k
+    # acc is: 0.374622.

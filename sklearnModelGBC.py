@@ -12,7 +12,7 @@ from sklearn.pipeline import Pipeline
 from calcMFCC import calcMFCC
 
 DATASETPATH = '../data/python_tutorial_RSCR/feature_mono32000/mix56mfccData.h5'
-MODELPATH = 'gbc.model'
+MODELPATH = 'model/gbc.model'
 
 
 def load_saved_dataset(path_to_dataset=DATASETPATH):
@@ -20,6 +20,7 @@ def load_saved_dataset(path_to_dataset=DATASETPATH):
     X = h5file['X'][:]
     Y = h5file['Y'][:]
     h5file.close()
+
     return X, Y
 
 
@@ -101,4 +102,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-
+    # acc is: 0.437683.

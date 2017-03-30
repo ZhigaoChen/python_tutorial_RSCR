@@ -6,14 +6,13 @@ import joblib
 from scipy.io.wavfile import read
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import train_test_split
+from sklearn.neural_network import MLPClassifier
 from sklearn.pipeline import Pipeline
-from sklearn.svm import SVC
-
 
 from calcMFCC import calcMFCC
 
 DATASETPATH = '../data/python_tutorial_RSCR/feature_mono32000/mix56mfccData.h5'
-MODELPATH = 'model/svm.model'
+MODELPATH = 'model/mlp.model'
 
 
 def load_saved_dataset(path_to_dataset=DATASETPATH):
@@ -21,6 +20,7 @@ def load_saved_dataset(path_to_dataset=DATASETPATH):
     X = h5file['X'][:]
     Y = h5file['Y'][:]
     h5file.close()
+
     return X, Y
 
 
@@ -32,7 +32,7 @@ def split_dataset_to_tain_test(X, Y, test_size=0.2):
 def grid_search(x_train, y_train):
     print 'grid search...'
     # 用信息增益启发式算法建立决策树
-    pipeline = Pipeline([('clf', SVC())])  # not
+    pipeline = Pipeline([('clf', MLPClassifier())])  # not
     print pipeline.get_params().keys()
     parameters = {
         'clf__max_depth': [10, 30, 50, 80, 100],
@@ -51,7 +51,7 @@ def grid_search(x_train, y_train):
 
 def basic_model(x_train, x_test, y_train, y_test):
     if not os.path.isfile(MODELPATH):
-        clf = SVC(decision_function_shape='ovo')
+        clf = MLPClassifier(random_state=1007,verbose=1,early_stopping=True)
 
     else:
         clf = joblib.load(MODELPATH)
@@ -101,4 +101,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-    # mfcc mix56 acc is: 0.243055. @32k
+    # acc is: 0.730327.
