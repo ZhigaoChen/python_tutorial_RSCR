@@ -1,5 +1,7 @@
 import os
 
+import h5py
+import numpy
 from pydub import AudioSegment
 
 from split2piece import split_into_words
@@ -90,3 +92,5 @@ def get_split_test_train(data_dir, dataset='mono16000vad', split_rate=0.8):
 
 # get_split_test_train('../data/python_tutorial_RSCR/mono32000vad', 'mono32000vad', split_rate=0.8)
 # format_all_to_wav()
+
+

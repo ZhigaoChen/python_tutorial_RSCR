@@ -38,8 +38,8 @@ def validate_on_all(data_dir=''):
     for root, dir_name, files in os.walk(data_dir):
         for wav_file in files:
             wav_path = os.path.join(root, wav_file)
-            if '.wav' in wav_path:
-                final_owner = vote_all_model_with_acc(tobe_predict=wav_path)
+            if '.wav' in wav_path and 'singing' in wav_path:
+                final_owner = vote_all_model_with_acc('model28readOnsing',tobe_predict=wav_path)
                 print final_owner, ' is the predict by our models'
                 true_answer = wav_path.split('-')[2].split('.')[0]
                 print true_answer, ' is the ground truth'

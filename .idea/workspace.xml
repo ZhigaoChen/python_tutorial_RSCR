@@ -2,8 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="280365f4-ec0e-451e-964d-a0ce5823b2c7" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/bnb.243.model" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/dt.628.model" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/gbc.437.model" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/gnb.431.model" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/mlp.730.model" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/nc.374.model" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/sgd.270.model" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rscrUI.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sklearnModelSVM.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/testGrid.py" afterPath="$PROJECT_DIR$/mainUI.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testGrid.py" afterPath="$PROJECT_DIR$/testGrid.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocess.py" afterPath="$PROJECT_DIR$/preprocess.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sklearnModelBNB.py" afterPath="$PROJECT_DIR$/sklearnModelBNB.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sklearnModelDT.py" afterPath="$PROJECT_DIR$/sklearnModelDT.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sklearnModelGBC.py" afterPath="$PROJECT_DIR$/sklearnModelGBC.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sklearnModelGNB.py" afterPath="$PROJECT_DIR$/sklearnModelGNB.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sklearnModelMLP.py" afterPath="$PROJECT_DIR$/sklearnModelMLP.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sklearnModelNC.py" afterPath="$PROJECT_DIR$/sklearnModelNC.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sklearnModelSGD.py" afterPath="$PROJECT_DIR$/sklearnModelSGD.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/voteAllSkearn.py" afterPath="$PROJECT_DIR$/voteAllSkearn.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/voteResult.md" afterPath="$PROJECT_DIR$/voteResult.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,24 +38,27 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="testGrid.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testGrid.py">
+      <file leaf-file-name="voteAllSkearn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/voteAllSkearn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+            <state relative-caret-position="144">
+              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
-                <element signature="e#15#34#0" expanded="true" />
+                <element signature="e#170#1034#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rscrUI.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rscrUI.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-882">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-              <folding />
+      <file leaf-file-name="voteResult.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/voteResult.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="27">
+                <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -57,8 +80,10 @@
       <find>NearestCentroid</find>
       <find>GradientBoostingClassifier</find>
       <find>'dt.model'</find>
-      <find>MODELPATH</find>
       <find>is the ground truth</find>
+      <find>MODELPATH</find>
+      <find>singing_</find>
+      <find>split_dataset_to_tain_test</find>
     </findStrings>
     <replaceStrings>
       <replace>GaussianNB</replace>
@@ -67,6 +92,7 @@
       <replace>GaussianProcess</replace>
       <replace>MLPClassifier</replace>
       <replace>MODELPATH</replace>
+      <replace>reading_</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -82,7 +108,6 @@
         <option value="$PROJECT_DIR$/reference/calcMFCC.py" />
         <option value="$PROJECT_DIR$/calcChroma.py" />
         <option value="$PROJECT_DIR$/getAudioFeature.py" />
-        <option value="$PROJECT_DIR$/preprocess.py" />
         <option value="$PROJECT_DIR$/vad_new.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/vad.py" />
@@ -90,18 +115,21 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/sklearnModel.py" />
         <option value="$PROJECT_DIR$/sklearnModelGP.py" />
-        <option value="$PROJECT_DIR$/sklearnModelBNB.py" />
-        <option value="$PROJECT_DIR$/sklearnModelGNB.py" />
-        <option value="$PROJECT_DIR$/sklearnModelNC.py" />
-        <option value="$PROJECT_DIR$/sklearnModelSVM.py" />
-        <option value="$PROJECT_DIR$/sklearnModelSGD.py" />
-        <option value="$PROJECT_DIR$/sklearnModelDT.py" />
-        <option value="$PROJECT_DIR$/sklearnModelMLP.py" />
-        <option value="$PROJECT_DIR$/sklearnModelGBC.py" />
-        <option value="$PROJECT_DIR$/voteResult.md" />
-        <option value="$PROJECT_DIR$/voteAllSkearn.py" />
         <option value="$PROJECT_DIR$/rscrUI.py" />
         <option value="$PROJECT_DIR$/testGrid.py" />
+        <option value="$PROJECT_DIR$/sklearnModelSVM.py" />
+        <option value="$PROJECT_DIR$/a" />
+        <option value="$PROJECT_DIR$/mainUI.py" />
+        <option value="$PROJECT_DIR$/preprocess.py" />
+        <option value="$PROJECT_DIR$/sklearnModelBNB.py" />
+        <option value="$PROJECT_DIR$/sklearnModelDT.py" />
+        <option value="$PROJECT_DIR$/sklearnModelGBC.py" />
+        <option value="$PROJECT_DIR$/sklearnModelGNB.py" />
+        <option value="$PROJECT_DIR$/sklearnModelMLP.py" />
+        <option value="$PROJECT_DIR$/sklearnModelNC.py" />
+        <option value="$PROJECT_DIR$/sklearnModelSGD.py" />
+        <option value="$PROJECT_DIR$/voteAllSkearn.py" />
+        <option value="$PROJECT_DIR$/voteResult.md" />
       </list>
     </option>
   </component>
@@ -158,8 +186,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.testGrid">
-    <configuration default="false" name="sklearnModelGBC" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.voteAllSkearn">
+    <configuration default="false" name="sklearnModelGNB" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -171,7 +199,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonTutorial5" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sklearnModelGBC.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sklearnModelGNB.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -193,6 +221,40 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="sklearnModelNC" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonTutorial5" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sklearnModelNC.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="sklearnModelSGD" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonTutorial5" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sklearnModelSGD.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="voteAllSkearn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -206,40 +268,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonTutorial5" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/voteAllSkearn.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="rscrUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonTutorial5" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rscrUI.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="testGrid" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonTutorial5" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testGrid.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -379,19 +407,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.sklearnModelGBC" />
+      <item index="0" class="java.lang.String" itemvalue="Python.sklearnModelGNB" />
       <item index="1" class="java.lang.String" itemvalue="Python.sklearnModelMLP" />
-      <item index="2" class="java.lang.String" itemvalue="Python.voteAllSkearn" />
-      <item index="3" class="java.lang.String" itemvalue="Python.rscrUI" />
-      <item index="4" class="java.lang.String" itemvalue="Python.testGrid" />
+      <item index="2" class="java.lang.String" itemvalue="Python.sklearnModelNC" />
+      <item index="3" class="java.lang.String" itemvalue="Python.sklearnModelSGD" />
+      <item index="4" class="java.lang.String" itemvalue="Python.voteAllSkearn" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.testGrid" />
-        <item index="1" class="java.lang.String" itemvalue="Python.rscrUI" />
-        <item index="2" class="java.lang.String" itemvalue="Python.voteAllSkearn" />
+        <item index="0" class="java.lang.String" itemvalue="Python.voteAllSkearn" />
+        <item index="1" class="java.lang.String" itemvalue="Python.sklearnModelSGD" />
+        <item index="2" class="java.lang.String" itemvalue="Python.sklearnModelNC" />
         <item index="3" class="java.lang.String" itemvalue="Python.sklearnModelMLP" />
-        <item index="4" class="java.lang.String" itemvalue="Python.sklearnModelGBC" />
+        <item index="4" class="java.lang.String" itemvalue="Python.sklearnModelGNB" />
       </list>
     </recent_temporary>
   </component>
@@ -412,12 +440,12 @@
     <frame x="0" y="2" width="1280" height="796" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24979983" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979983" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66906476" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5065123" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5065123" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32561505" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -439,7 +467,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66906476" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5065123" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5065123" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32561505" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979983" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -458,14 +486,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/lib/python2.7/site-packages/baseZhang/baseZhang.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="70" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reference/model.py" />
     <entry file="file://$PROJECT_DIR$/helloworld.py" />
     <entry file="file:///usr/local/lib/python2.7/site-packages/baseZhang/countDays.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -564,20 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getXYdataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/site-packages/sklearn/neighbors/nearest_centroid.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-627">
@@ -607,79 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sklearnModelSVM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="29" column="55" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="29" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sklearnModelBNB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1958">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sklearnModelDT.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1985">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sklearnModelGNB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2255">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sklearnModelMLP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sklearnModelNC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1985">
-          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sklearnModelSGD.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2484">
-          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sklearnModelGBC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/voteResult.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="5913">
-            <caret line="215" column="9" lean-forward="false" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -687,13 +620,6 @@
             <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="74" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/voteAllSkearn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -720,13 +646,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testGrid.py">
+    <entry file="file://$PROJECT_DIR$/mainUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        <state relative-caret-position="243">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#15#34#0" expanded="true" />
+            <element signature="e#146#463#0" expanded="false" />
+            <element signature="e#484#821#0" expanded="false" />
+            <element signature="e#852#1185#0" expanded="false" />
+            <element signature="e#1214#1595#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getXYdataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/site-packages/joblib/numpy_pickle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="566" column="0" lean-forward="false" selection-start-line="566" selection-start-column="0" selection-end-line="566" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklearnModelSVM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="17" column="86" lean-forward="true" selection-start-line="17" selection-start-column="86" selection-end-line="17" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" column="79" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-368">
+          <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#34#0" expanded="true" />
+            <element signature="e#146#463#0" expanded="false" />
+            <element signature="e#484#821#0" expanded="false" />
+            <element signature="e#852#1185#0" expanded="false" />
+            <element signature="e#1214#1595#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#639#1512#0" expanded="false" />
+            <marker date="1491033829000" expanded="false" signature="2198:3112" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklearnModelBNB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="103" column="35" lean-forward="true" selection-start-line="96" selection-start-column="4" selection-end-line="103" selection-end-column="35" />
+          <folding>
+            <element signature="e#15#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklearnModelDT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="91" column="88" lean-forward="true" selection-start-line="85" selection-start-column="4" selection-end-line="91" selection-end-column="88" />
+          <folding>
+            <element signature="e#15#26#0" expanded="true" />
+            <element signature="e#2166#2577#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklearnModelGBC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklearnModelGNB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2349">
+          <caret line="94" column="33" lean-forward="true" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
+          <folding>
+            <element signature="e#15#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklearnModelMLP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklearnModelNC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklearnModelSGD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voteAllSkearn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#170#1034#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voteResult.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="27">
+            <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

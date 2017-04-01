@@ -10,8 +10,14 @@ from sklearn.pipeline import Pipeline
 from sklearn.neighbors.nearest_centroid import NearestCentroid
 from calcMFCC import calcMFCC
 
-DATASETPATH = '../data/python_tutorial_RSCR/feature_mono32000/mix56mfccData.h5'
-MODELPATH = 'model/nc.model'
+from preprocess import if_no_create_it
+from sklearnModelBNB import load_separate_sing_read_dataset_to_tain_test
+
+DATA = 'reading28'
+MODEL = '28readOnsing'
+DATASETPATH = '../data/python_tutorial_RSCR/feature_mono32000/' + DATA + 'mfccData.h5'
+MODELPATH = 'model' + MODEL + '/nc.model'
+if_no_create_it(MODELPATH)
 
 
 def load_saved_dataset(path_to_dataset=DATASETPATH):
@@ -84,10 +90,13 @@ def predict_user_choose_audio_file(wav_path, model_path=MODELPATH):
 
 
 def main():
+    readH5file = '../data/python_tutorial_RSCR/feature_mono32000/reading28mfccData.h5'
+    singH5file = '../data/python_tutorial_RSCR/feature_mono32000/singing28mfccData.h5'
     print "start load dataset..."
     X, Y = load_saved_dataset()
     print 'build model...'
-    x_train, x_test, y_train, y_test = split_dataset_to_tain_test(X, Y, test_size=0.2)
+    x_train, x_test, y_train, y_test = load_separate_sing_read_dataset_to_tain_test(readH5file, singH5file)
+    # x_train, x_test, y_train, y_test = split_dataset_to_tain_test(X, Y, test_size=0.2)
     # grid_search(x_train, y_train)
     acc, model = basic_model(x_train, x_test, y_train, y_test)
     joblib.dump(model, MODELPATH)
