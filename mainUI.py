@@ -68,7 +68,7 @@ def reading_openfile():
 def reading_submit():
     wav_path = reading_path_entry_varible.get()
     owner = reading_true_result_variable.get()
-    predict_owner = vote_all_model_with_acc('model28singing',tobe_predict=wav_path)
+    predict_owner = vote_all_model_with_acc('model28reading',tobe_predict=wav_path)
     reading_predict_result_varible.set(predict_owner)
 
     if owner == predict_owner:
@@ -79,6 +79,30 @@ def reading_submit():
 
     return 0
 
+
+def readOnsing_openfile():
+    addres = tkFileDialog.askopenfilename(title='choose wav file ',
+                                          filetypes=[('Audio', '*.wav *.WAV'), ('All Files', '*')])
+    print addres
+    readOnsing_path_entry_varible.set(addres)
+    owner = addres.split('-')[-1].split('.')[0]
+    readOnsing_true_result_variable.set(owner)
+    return addres
+
+
+def readOnsing_submit():
+    wav_path = readOnsing_path_entry_varible.get()
+    owner = readOnsing_true_result_variable.get()
+    predict_owner = vote_all_model_with_acc('model28readOnsing',tobe_predict=wav_path)
+    readOnsing_predict_result_varible.set(predict_owner)
+
+    if owner == predict_owner:
+
+        readOnsing_photo_label.config(image=right)
+    else:
+        readOnsing_photo_label.config(image=wrong)
+
+    return 0
 win = Tk()  # 定义一个窗体
 win.title('RSCR')  # 定义窗体标题
 # win.config(bg='w')
@@ -169,5 +193,33 @@ reading_true_result.grid(row=10, column=1, sticky=W)
 reading_predict_label.grid(row=11, column=0, sticky=W)
 reading_predict_result.grid(row=11, column=1, sticky=W)
 reading_photo_label.grid(row=10, column=2, columnspan=2, rowspan=2, sticky=W + E + N + S, padx=5, pady=5)
+
+
+readOnsing_title_libel = Label(win, text='readOnsing voice recognition')
+readOnsing_intro_labe = Label(win, text='pls choose wav file:')
+readOnsing_path_entry_varible = StringVar()
+readOnsing_path_entry = Entry(win, state=DISABLED, textvariable=readOnsing_path_entry_varible)
+readOnsing_choose_button = Button(win, text='choose', command=readOnsing_openfile)
+readOnsing_submit_button = Button(win, text='submit', command=readOnsing_submit)
+readOnsing_true_label = Label(win, text='answer:')
+readOnsing_true_result_variable = StringVar()
+readOnsing_true_result = Entry(win, state=DISABLED, textvariable=readOnsing_true_result_variable)
+readOnsing_predict_label = Label(win, text='predict:')
+readOnsing_predict_result_varible = StringVar()
+readOnsing_predict_result = Entry(win, state=DISABLED, textvariable=readOnsing_predict_result_varible)
+readOnsing_photo_label = Label()
+readOnsing_photo_label.config(image=default)
+
+
+readOnsing_title_libel.grid(row=12, column=0, columnspan=4)
+readOnsing_intro_labe.grid(row=13, column=0, sticky=W)
+readOnsing_path_entry.grid(row=13, column=1, sticky=W)
+readOnsing_choose_button.grid(row=13, column=2, sticky=W)
+readOnsing_submit_button.grid(row=13, column=3, sticky=W)
+readOnsing_true_label.grid(row=14, column=0, sticky=W)
+readOnsing_true_result.grid(row=14, column=1, sticky=W)
+readOnsing_predict_label.grid(row=15, column=0, sticky=W)
+readOnsing_predict_result.grid(row=15, column=1, sticky=W)
+readOnsing_photo_label.grid(row=14, column=2, columnspan=2, rowspan=2, sticky=W + E + N + S, padx=5, pady=5)
 
 mainloop()  # 进入主循环，程序运行

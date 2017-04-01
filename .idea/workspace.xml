@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="280365f4-ec0e-451e-964d-a0ce5823b2c7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/bnb.243.model" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/dt.628.model" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/gbc.437.model" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/gnb.431.model" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/mlp.730.model" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/nc.374.model" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/sgd.270.model" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rscrUI.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sklearnModelSVM.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/testGrid.py" afterPath="$PROJECT_DIR$/mainUI.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocess.py" afterPath="$PROJECT_DIR$/preprocess.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sklearnModelBNB.py" afterPath="$PROJECT_DIR$/sklearnModelBNB.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sklearnModelDT.py" afterPath="$PROJECT_DIR$/sklearnModelDT.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sklearnModelGBC.py" afterPath="$PROJECT_DIR$/sklearnModelGBC.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sklearnModelGNB.py" afterPath="$PROJECT_DIR$/sklearnModelGNB.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sklearnModelMLP.py" afterPath="$PROJECT_DIR$/sklearnModelMLP.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sklearnModelNC.py" afterPath="$PROJECT_DIR$/sklearnModelNC.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sklearnModelSGD.py" afterPath="$PROJECT_DIR$/sklearnModelSGD.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/voteAllSkearn.py" afterPath="$PROJECT_DIR$/voteAllSkearn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/voteResult.md" afterPath="$PROJECT_DIR$/voteResult.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainUI.py" afterPath="$PROJECT_DIR$/mainUI.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,27 +18,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="voteAllSkearn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/voteAllSkearn.py">
+      <file leaf-file-name="mainUI.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mainUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="126">
+              <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding>
-                <element signature="e#170#1034#0" expanded="false" />
+                <element signature="e#15#34#0" expanded="true" />
+                <element signature="e#146#463#0" expanded="false" />
+                <element signature="e#484#821#0" expanded="false" />
+                <element signature="e#852#1185#0" expanded="false" />
+                <element signature="e#1214#1595#0" expanded="false" />
+                <element signature="e#1626#1959#0" expanded="false" />
+                <element signature="e#1988#2369#0" expanded="false" />
+                <element signature="e#2403#2742#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="voteResult.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/voteResult.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="27">
-                <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="a" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/a">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="4" column="16" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,6 +68,7 @@
       <find>MODELPATH</find>
       <find>singing_</find>
       <find>split_dataset_to_tain_test</find>
+      <find>reading</find>
     </findStrings>
     <replaceStrings>
       <replace>GaussianNB</replace>
@@ -93,6 +78,7 @@
       <replace>MLPClassifier</replace>
       <replace>MODELPATH</replace>
       <replace>reading_</replace>
+      <replace>readOnsing</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -118,8 +104,6 @@
         <option value="$PROJECT_DIR$/rscrUI.py" />
         <option value="$PROJECT_DIR$/testGrid.py" />
         <option value="$PROJECT_DIR$/sklearnModelSVM.py" />
-        <option value="$PROJECT_DIR$/a" />
-        <option value="$PROJECT_DIR$/mainUI.py" />
         <option value="$PROJECT_DIR$/preprocess.py" />
         <option value="$PROJECT_DIR$/sklearnModelBNB.py" />
         <option value="$PROJECT_DIR$/sklearnModelDT.py" />
@@ -130,6 +114,8 @@
         <option value="$PROJECT_DIR$/sklearnModelSGD.py" />
         <option value="$PROJECT_DIR$/voteAllSkearn.py" />
         <option value="$PROJECT_DIR$/voteResult.md" />
+        <option value="$PROJECT_DIR$/a" />
+        <option value="$PROJECT_DIR$/mainUI.py" />
       </list>
     </option>
   </component>
@@ -186,24 +172,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.voteAllSkearn">
-    <configuration default="false" name="sklearnModelGNB" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pythonTutorial5" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sklearnModelGNB.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.mainUI">
     <configuration default="false" name="sklearnModelMLP" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -268,6 +237,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonTutorial5" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/voteAllSkearn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="mainUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonTutorial5" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mainUI.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -407,19 +393,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.sklearnModelGNB" />
-      <item index="1" class="java.lang.String" itemvalue="Python.sklearnModelMLP" />
-      <item index="2" class="java.lang.String" itemvalue="Python.sklearnModelNC" />
-      <item index="3" class="java.lang.String" itemvalue="Python.sklearnModelSGD" />
-      <item index="4" class="java.lang.String" itemvalue="Python.voteAllSkearn" />
+      <item index="0" class="java.lang.String" itemvalue="Python.sklearnModelMLP" />
+      <item index="1" class="java.lang.String" itemvalue="Python.sklearnModelNC" />
+      <item index="2" class="java.lang.String" itemvalue="Python.sklearnModelSGD" />
+      <item index="3" class="java.lang.String" itemvalue="Python.voteAllSkearn" />
+      <item index="4" class="java.lang.String" itemvalue="Python.mainUI" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.voteAllSkearn" />
-        <item index="1" class="java.lang.String" itemvalue="Python.sklearnModelSGD" />
-        <item index="2" class="java.lang.String" itemvalue="Python.sklearnModelNC" />
-        <item index="3" class="java.lang.String" itemvalue="Python.sklearnModelMLP" />
-        <item index="4" class="java.lang.String" itemvalue="Python.sklearnModelGNB" />
+        <item index="0" class="java.lang.String" itemvalue="Python.mainUI" />
+        <item index="1" class="java.lang.String" itemvalue="Python.voteAllSkearn" />
+        <item index="2" class="java.lang.String" itemvalue="Python.sklearnModelSGD" />
+        <item index="3" class="java.lang.String" itemvalue="Python.sklearnModelNC" />
+        <item index="4" class="java.lang.String" itemvalue="Python.sklearnModelMLP" />
       </list>
     </recent_temporary>
   </component>
@@ -468,7 +454,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66906476" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5065123" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32561505" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32561505" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979983" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -656,6 +642,9 @@
             <element signature="e#484#821#0" expanded="false" />
             <element signature="e#852#1185#0" expanded="false" />
             <element signature="e#1214#1595#0" expanded="false" />
+            <element signature="e#1626#1959#0" expanded="false" />
+            <element signature="e#1988#2369#0" expanded="false" />
+            <element signature="e#2403#2742#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -681,28 +670,6 @@
         <state relative-caret-position="189">
           <caret line="17" column="86" lean-forward="true" selection-start-line="17" selection-start-column="86" selection-end-line="17" selection-end-column="86" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="3" column="79" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainUI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-368">
-          <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#34#0" expanded="true" />
-            <element signature="e#146#463#0" expanded="false" />
-            <element signature="e#484#821#0" expanded="false" />
-            <element signature="e#852#1185#0" expanded="false" />
-            <element signature="e#1214#1595#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -783,6 +750,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/voteResult.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="27">
+            <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/voteAllSkearn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -793,14 +771,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/voteResult.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="27">
-            <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/a">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#34#0" expanded="true" />
+            <element signature="e#146#463#0" expanded="false" />
+            <element signature="e#484#821#0" expanded="false" />
+            <element signature="e#852#1185#0" expanded="false" />
+            <element signature="e#1214#1595#0" expanded="false" />
+            <element signature="e#1626#1959#0" expanded="false" />
+            <element signature="e#1988#2369#0" expanded="false" />
+            <element signature="e#2403#2742#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

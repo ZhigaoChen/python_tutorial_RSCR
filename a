@@ -1,0 +1,24 @@
+
+def readOnsing_openfile():
+    addres = tkFileDialog.askopenfilename(title='choose wav file ',
+                                          filetypes=[('Audio', '*.wav *.WAV'), ('All Files', '*')])
+    print addres
+    readOnsing_path_entry_varible.set(addres)
+    owner = addres.split('-')[-1].split('.')[0]
+    readOnsing_true_result_variable.set(owner)
+    return addres
+
+
+def readOnsing_submit():
+    wav_path = readOnsing_path_entry_varible.get()
+    owner = readOnsing_true_result_variable.get()
+    predict_owner = vote_all_model_with_acc('model28singing',tobe_predict=wav_path)
+    readOnsing_predict_result_varible.set(predict_owner)
+
+    if owner == predict_owner:
+
+        readOnsing_photo_label.config(image=right)
+    else:
+        readOnsing_photo_label.config(image=wrong)
+
+    return 0
