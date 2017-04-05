@@ -16,4 +16,4 @@ Step4. in sklearnModel build DecisonTree model to classification .basic_model() 
 
 
 ## main UI
-![final UI](http://i1.piimg.com/567571/7c68c48c4aa5b130.png)
+![final UI](http://i4.buimg.com/567571/512d99b5a2197374.png)
