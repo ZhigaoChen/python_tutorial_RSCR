@@ -18,7 +18,7 @@ def openfile():
 def submit():
     wav_path = path_entry_varible.get()
     owner = true_result_variable.get()
-    predict_owner = vote_all_model_with_acc('model56mix',tobe_predict=wav_path)
+    predict_owner = vote_all_model_with_acc('model56mix', tobe_predict=wav_path)
     predict_result_varible.set(predict_owner)
 
     if owner == predict_owner:
@@ -43,7 +43,7 @@ def singing_openfile():
 def singing_submit():
     wav_path = singing_path_entry_varible.get()
     owner = singing_true_result_variable.get()
-    predict_owner = vote_all_model_with_acc('model28singing',tobe_predict=wav_path)
+    predict_owner = vote_all_model_with_acc('model28singing', tobe_predict=wav_path)
     singing_predict_result_varible.set(predict_owner)
 
     if owner == predict_owner:
@@ -68,7 +68,7 @@ def reading_openfile():
 def reading_submit():
     wav_path = reading_path_entry_varible.get()
     owner = reading_true_result_variable.get()
-    predict_owner = vote_all_model_with_acc('model28reading',tobe_predict=wav_path)
+    predict_owner = vote_all_model_with_acc('model28reading', tobe_predict=wav_path)
     reading_predict_result_varible.set(predict_owner)
 
     if owner == predict_owner:
@@ -93,7 +93,7 @@ def readOnsing_openfile():
 def readOnsing_submit():
     wav_path = readOnsing_path_entry_varible.get()
     owner = readOnsing_true_result_variable.get()
-    predict_owner = vote_all_model_with_acc('model28readOnsing',tobe_predict=wav_path)
+    predict_owner = vote_all_model_with_acc('model28readOnsing', tobe_predict=wav_path)
     readOnsing_predict_result_varible.set(predict_owner)
 
     if owner == predict_owner:
@@ -103,6 +103,33 @@ def readOnsing_submit():
         readOnsing_photo_label.config(image=wrong)
 
     return 0
+
+
+def singOnread_openfile():
+    addres = tkFileDialog.askopenfilename(title='choose wav file ',
+                                          filetypes=[('Audio', '*.wav *.WAV'), ('All Files', '*')])
+    print addres
+    singOnread_path_entry_varible.set(addres)
+    owner = addres.split('-')[-1].split('.')[0]
+    singOnread_true_result_variable.set(owner)
+    return addres
+
+
+def singOnread_submit():
+    wav_path = singOnread_path_entry_varible.get()
+    owner = singOnread_true_result_variable.get()
+    predict_owner = vote_all_model_with_acc('model28singOnread', tobe_predict=wav_path)
+    singOnread_predict_result_varible.set(predict_owner)
+
+    if owner == predict_owner:
+
+        singOnread_photo_label.config(image=right)
+    else:
+        singOnread_photo_label.config(image=wrong)
+
+    return 0
+
+
 win = Tk()  # 定义一个窗体
 win.title('RSCR')  # 定义窗体标题
 # win.config(bg='w')
@@ -136,7 +163,6 @@ predict_label.grid(row=3, column=0, sticky=W)
 predict_result.grid(row=3, column=1, sticky=W)
 photo_label.grid(row=2, column=2, columnspan=2, rowspan=2, sticky=W + E + N + S, padx=5, pady=5)
 
-
 singing_title_libel = Label(win, text='singing voice recognition')
 singing_intro_labe = Label(win, text='pls choose wav file:')
 singing_path_entry_varible = StringVar()
@@ -152,7 +178,6 @@ singing_predict_result = Entry(win, state=DISABLED, textvariable=singing_predict
 singing_photo_label = Label()
 singing_photo_label.config(image=default)
 
-
 singing_title_libel.grid(row=4, column=0, columnspan=4)
 singing_intro_labe.grid(row=5, column=0, sticky=W)
 singing_path_entry.grid(row=5, column=1, sticky=W)
@@ -163,9 +188,6 @@ singing_true_result.grid(row=6, column=1, sticky=W)
 singing_predict_label.grid(row=7, column=0, sticky=W)
 singing_predict_result.grid(row=7, column=1, sticky=W)
 singing_photo_label.grid(row=6, column=2, columnspan=2, rowspan=2, sticky=W + E + N + S, padx=5, pady=5)
-
-
-
 
 reading_title_libel = Label(win, text='reading voice recognition')
 reading_intro_labe = Label(win, text='pls choose wav file:')
@@ -182,7 +204,6 @@ reading_predict_result = Entry(win, state=DISABLED, textvariable=reading_predict
 reading_photo_label = Label()
 reading_photo_label.config(image=default)
 
-
 reading_title_libel.grid(row=8, column=0, columnspan=4)
 reading_intro_labe.grid(row=9, column=0, sticky=W)
 reading_path_entry.grid(row=9, column=1, sticky=W)
@@ -193,7 +214,6 @@ reading_true_result.grid(row=10, column=1, sticky=W)
 reading_predict_label.grid(row=11, column=0, sticky=W)
 reading_predict_result.grid(row=11, column=1, sticky=W)
 reading_photo_label.grid(row=10, column=2, columnspan=2, rowspan=2, sticky=W + E + N + S, padx=5, pady=5)
-
 
 readOnsing_title_libel = Label(win, text='readOnsing voice recognition')
 readOnsing_intro_labe = Label(win, text='pls choose wav file:')
@@ -210,7 +230,6 @@ readOnsing_predict_result = Entry(win, state=DISABLED, textvariable=readOnsing_p
 readOnsing_photo_label = Label()
 readOnsing_photo_label.config(image=default)
 
-
 readOnsing_title_libel.grid(row=12, column=0, columnspan=4)
 readOnsing_intro_labe.grid(row=13, column=0, sticky=W)
 readOnsing_path_entry.grid(row=13, column=1, sticky=W)
@@ -221,5 +240,31 @@ readOnsing_true_result.grid(row=14, column=1, sticky=W)
 readOnsing_predict_label.grid(row=15, column=0, sticky=W)
 readOnsing_predict_result.grid(row=15, column=1, sticky=W)
 readOnsing_photo_label.grid(row=14, column=2, columnspan=2, rowspan=2, sticky=W + E + N + S, padx=5, pady=5)
+
+singOnread_title_libel = Label(win, text='singOnread voice recognition')
+singOnread_intro_labe = Label(win, text='pls choose wav file:')
+singOnread_path_entry_varible = StringVar()
+singOnread_path_entry = Entry(win, state=DISABLED, textvariable=singOnread_path_entry_varible)
+singOnread_choose_button = Button(win, text='choose', command=singOnread_openfile)
+singOnread_submit_button = Button(win, text='submit', command=singOnread_submit)
+singOnread_true_label = Label(win, text='answer:')
+singOnread_true_result_variable = StringVar()
+singOnread_true_result = Entry(win, state=DISABLED, textvariable=singOnread_true_result_variable)
+singOnread_predict_label = Label(win, text='predict:')
+singOnread_predict_result_varible = StringVar()
+singOnread_predict_result = Entry(win, state=DISABLED, textvariable=singOnread_predict_result_varible)
+singOnread_photo_label = Label()
+singOnread_photo_label.config(image=default)
+
+singOnread_title_libel.grid(row=16, column=0, columnspan=4)
+singOnread_intro_labe.grid(row=17, column=0, sticky=W)
+singOnread_path_entry.grid(row=17, column=1, sticky=W)
+singOnread_choose_button.grid(row=17, column=2, sticky=W)
+singOnread_submit_button.grid(row=17, column=3, sticky=W)
+singOnread_true_label.grid(row=18, column=0, sticky=W)
+singOnread_true_result.grid(row=18, column=1, sticky=W)
+singOnread_predict_label.grid(row=19, column=0, sticky=W)
+singOnread_predict_result.grid(row=19, column=1, sticky=W)
+singOnread_photo_label.grid(row=18, column=2, columnspan=2, rowspan=2, sticky=W + E + N + S, padx=5, pady=5)
 
 mainloop()  # 进入主循环，程序运行

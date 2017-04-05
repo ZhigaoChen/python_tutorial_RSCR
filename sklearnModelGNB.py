@@ -15,7 +15,7 @@ from preprocess import if_no_create_it
 from sklearnModelBNB import load_separate_sing_read_dataset_to_tain_test
 
 DATA = 'reading28'
-MODEL = '28readOnsing'
+MODEL = '28singOnread'
 DATASETPATH = '../data/python_tutorial_RSCR/feature_mono32000/' + DATA + 'mfccData.h5'
 MODELPATH = 'model' + MODEL + '/gnb.model'
 if_no_create_it(MODELPATH)
@@ -90,8 +90,8 @@ def predict_user_choose_audio_file(wav_path, model_path=MODELPATH):
 
 
 def main():
-    readH5file = '../data/python_tutorial_RSCR/feature_mono32000/reading28mfccData.h5'
-    singH5file = '../data/python_tutorial_RSCR/feature_mono32000/singing28mfccData.h5'
+    singH5file = '../data/python_tutorial_RSCR/feature_mono32000/reading28mfccData.h5'
+    readH5file = '../data/python_tutorial_RSCR/feature_mono32000/singing28mfccData.h5'
     print "start load dataset..."
     X, Y = load_saved_dataset()
     print 'build model...'

@@ -55,7 +55,7 @@ def load_wav_data_to_extract_features(data_dir='../data/python_tutorial_RSCR/mon
                 for mfcc_feature_frame in mfcc_feature:
                     mfcc_dataset_X.append(mfcc_feature_frame)
                     mfcc_dataset_Y.append(audio_owner)
-    saveChromaDataset(chroma_dataset_X, chroma_dataset_Y)
+    # saveChromaDataset(chroma_dataset_X, chroma_dataset_Y)
     saveMFCCDataset(mfcc_dataset_X, mfcc_dataset_Y)
     return 0
 

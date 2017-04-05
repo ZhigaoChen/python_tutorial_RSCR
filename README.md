@@ -13,3 +13,7 @@ Step2. only supprt 8k 16k 32k to vad. use vad.py function get_vad('../data/pytho
 Step3. extract features of mfcc and chroma use getXYdataset.py function load_wav_data_to_extract_features(). to save the features as h5 file.
 
 Step4. in sklearnModel build DecisonTree model to classification .basic_model() to run classify and cross_val_score() for cross validation and grid_search() for parameters fine tune.
+
+
+## main UI
+![final UI](http://i1.piimg.com/567571/7c68c48c4aa5b130.png)
